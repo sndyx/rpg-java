@@ -38,7 +38,7 @@ public class CompassComponent implements FixedComponent {
         e = (e + 0.5) % 1.0 - 0.5;
         speed += e * 0.1;
         speed *= 0.8;
-        speed = (rotation + speed) % 1.0;
+        rotation = (rotation + speed) % 1.0;
     }
 
 }
