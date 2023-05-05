@@ -19,9 +19,6 @@ public class CompassComponent implements FixedComponent {
     public int getX() { return 0; }
 
     @Override
-    public int getY() { return 0; }
-
-    @Override
     public RenderResult render() {
         double angle = Math.atan2(
                 player.getCompassTarget().getZ() - player.getLocation().getZ(),

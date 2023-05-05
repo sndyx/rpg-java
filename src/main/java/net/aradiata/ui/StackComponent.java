@@ -2,15 +2,15 @@ package net.aradiata.ui;
 
 import java.util.List;
 
-public abstract class StackComponent implements UIComponent {
+public abstract class StackComponent<T extends UIComponent> implements UIComponent {
 
-    final List<UIComponent> components;
+    final List<T> components;
 
-    public StackComponent(List<UIComponent> components) {
+    public StackComponent(List<T> components) {
         this.components = components;
     }
 
-    public void addComponent(UIComponent component) {
+    public void addComponent(T component) {
         components.add(component);
     }
 
