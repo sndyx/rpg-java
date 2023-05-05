@@ -31,13 +31,4 @@ public class FixedStackComponent extends StackComponent<FixedComponent> {
         return new RenderResult(cb.create(), 0);
     }
 
-    private String offset(int x) {
-        return "";
-        // TODO: Calculate string of special characters to properly offset text
-        // EG: +36 = [32, 4] = [\uE006, \uE003]
-        // TABLE: \uE001 (1) \uE002 (2) \uE003 (4) \uE004 (8) \uE005 (16) \uE006 (32)...
-        // NEGATIVE: \uF001 (-1) \uF002 (-2)...
-        // Calculate optimal series of positives and negatives?
-    }
-
 }
